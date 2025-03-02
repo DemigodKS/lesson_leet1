@@ -21,21 +21,9 @@ result = Solution(5)
 print(result.add_numbers())
 print(result.simpleNumber())
 
+
+
 #var2
-class Soss:
-
-    def __init__(self):
-        self.result = 0
-    def unique_one(self, numbers):
-        for i in numbers:
-            self.result ^= i
-        return self.result
-
-#numbers = [1, 2, 7, 2, 1]
-#fe = Soss(numbers)
-#print(fe.unique_one())
-
-#var3
 def unique_one(numbers) -> int:
     result = 0
     for i in numbers:
