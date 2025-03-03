@@ -33,3 +33,17 @@ def unique_one(numbers) -> int:
 #numbers = [1, 2, 4, 2, 1]
 #ff = unique_one(numbers)
 #print(ff)
+
+#144
+class Solution:
+    def preorderTraversal(self, root) -> list:
+
+        for number in root:
+            if isinstance(number, str):
+                root.remove(number)
+        return root
+
+result = [1, 'ok', 2, 'null', 3, 5, 7, 77, 'frank']
+variant1 = Solution()
+
+print(variant1.preorderTraversal(result))
